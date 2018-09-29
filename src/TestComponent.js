@@ -41,7 +41,7 @@ class TestComponent extends React.Component {
     }
 
     render() {
-      return <h1 onClick={this.handleClick} style={{background: this.state.color}}>Click me!</h1>;
+      return <h1 onClick={this.handleClick} style={{background: this.state.color}}>{this.props.text}</h1>;
     }
 }
 
